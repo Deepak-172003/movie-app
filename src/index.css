@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* primary #1F1E24 */
+/* secondary #6556CD */
+
+::-webkit-scrollbar{
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-thumb{
+  background: #181819;
+  
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background: #6556CD;
+  border-radius: 10px;
+}
+
+
+select{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-apperance:none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  background: #27272a;
+  background-image: none;
+  flex: 1;
+  padding: 0 0.5em;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1em;
+  font-family: "Open sans",sans-serif;
+
+}
+
+select::-ms-expand{
+  display: none;
+
+}
+
+.select{
+  position: relative;
+  display: flex;
+  width: 20em;
+  height: 3em;
+  line-height: 3;
+  overflow: hidden;
+  border-radius: 0.25em;
+}
+
+.select::after{
+  content: "\25BC";
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 1em;
+  background: #27272a;
+  cursor: pointer;
+  pointer-events: none;
+  transition: 0.25s all ease;
+
+}
+
+select:hover::after{
+  color: #6556CD;
+}
+
+select:focus{
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+
+
+.custom-scroll::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+.custom-scroll::-webkit-scrollbar-thumb {
+  background: #181819;
+  border-radius: 10px;
+}
+
+.custom-scroll::-webkit-scrollbar-thumb:hover {
+  background: #6556CD;
+}
