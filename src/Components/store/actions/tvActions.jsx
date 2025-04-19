@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 export { removetv } from "../reducers/tvSlice";
 
 import axios from "../../../utils/axios";
