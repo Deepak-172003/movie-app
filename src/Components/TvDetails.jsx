@@ -10,7 +10,7 @@ import {
 import { removetv } from "./store/reducers/tvSlice";
 import Loading from "./Loading";
 import HorizontalCard from "./templets/HorizontalCard";
-import { asyncloadtv } from "./store/actions/tvactions";
+import { asyncloadtv } from "./store/actions/tvActions";
 
 const TvDetails = () => {
   const { pathname } = useLocation();
